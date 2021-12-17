@@ -40,7 +40,8 @@ packer.init {
 
 return packer.startup(function(use)
   -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
+  use "wbthomason/packer.nvim"            -- Have packer manage itself
+  use 'shaunsingh/nord.nvim'              -- Colorscheme
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
