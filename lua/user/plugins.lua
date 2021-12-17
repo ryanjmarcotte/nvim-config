@@ -41,6 +41,7 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim"            -- Have packer manage itself
+  use "nvim-lua/plenary.nvim"             -- Useful lua functions used ny lots of plugins'
   use 'shaunsingh/nord.nvim'              -- Colorscheme
 
   -- cmp plugins
@@ -58,6 +59,9 @@ return packer.startup(function(use)
    -- LSP
   use "neovim/nvim-lspconfig"             -- enable LSP
   use "williamboman/nvim-lsp-installer"   -- simple to use language server installer
+
+  -- Telescope
+  use "nvim-telescope/telescope.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
