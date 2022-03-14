@@ -45,6 +45,9 @@ return packer.startup(function(use)
   use "shaunsingh/nord.nvim"              -- Colorscheme
   use "akinsho/toggleterm.nvim"
   use "folke/which-key.nvim"
+  use "tpope/vim-fugitive"
+  use "tpope/vim-commentary"
+  use "vimwiki/vimwiki"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"                  -- The completion plugin
@@ -64,6 +67,8 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use "sharkdp/fd"
 
   -- Treesitter
   use {
