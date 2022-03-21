@@ -48,3 +48,6 @@ vim.opt.splitbelow = true
 
 -- When splitting a window vertically, put the new window right of the current one.
 vim.opt.splitright = true
+
+-- Enable 24-bit RGB color in the TUI.
+vim.opt.termguicolors = true

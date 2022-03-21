@@ -1,5 +1,9 @@
-local nord_status_ok, nord = pcall(require, "nord")
-if not nord_status_ok then
+vim.cmd "colorscheme default"
+
+local colorscheme = "solarized"
+
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+  vim.notify("colorscheme " .. colorscheme .. " not found!")
   return
 end
-vim.cmd[[colorscheme nord]]

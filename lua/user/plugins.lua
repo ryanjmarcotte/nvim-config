@@ -42,12 +42,15 @@ return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim"            -- Have packer manage itself
   use "nvim-lua/plenary.nvim"             -- Useful lua functions used ny lots of plugins'
-  use "shaunsingh/nord.nvim"              -- Colorscheme
   use "akinsho/toggleterm.nvim"
   use "folke/which-key.nvim"
   use "tpope/vim-fugitive"
   use "tpope/vim-commentary"
   use "vimwiki/vimwiki"
+
+  -- Colorschemes
+  use "shaunsingh/nord.nvim"
+  use "ishan9299/nvim-solarized-lua"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp"                  -- The completion plugin
