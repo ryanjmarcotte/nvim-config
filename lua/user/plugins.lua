@@ -39,14 +39,18 @@ packer.init {
 }
 
 return packer.startup(function(use)
-  -- My plugins here
   use "wbthomason/packer.nvim"            -- Have packer manage itself
   use "nvim-lua/plenary.nvim"             -- Useful lua functions used ny lots of plugins'
   use "akinsho/toggleterm.nvim"
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"                     -- Delete buffers without closing windows
   use "folke/which-key.nvim"
   use "tpope/vim-fugitive"
-  use "tpope/vim-commentary"
   use "vimwiki/vimwiki"
+  use "windwp/nvim-autopairs"
+  use {'numToStr/Comment.nvim', config = function() require('Comment').setup() end}
+  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-tree.lua"
 
   -- Colorschemes
   use "shaunsingh/nord.nvim"
@@ -79,6 +83,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "p00f/nvim-ts-rainbow"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
